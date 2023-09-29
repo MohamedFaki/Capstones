@@ -1,4 +1,4 @@
-[Link to the Login Page](https://651652116da52f2a7bea43a2--sage-cobbler-7a07df.netlify.app/login)
+[Link to the Login Page]((https://sage-cobbler-7a07df.netlify.app/login))
 
 # E-Commerce Website
 
