@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # E-Commerce Website
 
 This is a feature-rich E-Commerce website built with React that leverages several modern technologies and techniques for a seamless user experience.
@@ -48,3 +49,6 @@ If you'd like to contribute to this project, feel free to open issues or submit 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+=======
+# Capstones
+>>>>>>> main
