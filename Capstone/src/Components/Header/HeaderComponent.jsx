@@ -12,17 +12,12 @@ function HeaderComponent({ toggleFilterCategory, toggleSearchBar, toggleCartSumm
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/login">Login</Link> 
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       </nav>
 
-      <img
-        src={cartIcon}
-        alt="Shopping Bag Icon"
-        className="cart-icon"
-        onClick={toggleCartSummary}
-      />
+
     </header>
   );
 }

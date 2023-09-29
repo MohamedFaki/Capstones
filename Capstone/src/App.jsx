@@ -28,7 +28,7 @@ function App() {
 
         <nav className="navbar">
           <ul>
-            
+
 
           </ul>
         </nav>

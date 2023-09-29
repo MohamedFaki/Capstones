@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./ProductListComponent.css";
+import "./ProductDetailComponent.css";
 import { useParams } from "react-router-dom";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"; // Import necessary components
 
 
 
-
 function ProductDetailComponent() {
-    const { id } = useParams(); 
+    const { id } = useParams();
     const [product, setProduct] = useState(null);
 
 

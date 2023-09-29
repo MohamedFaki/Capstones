@@ -1,0 +1,32 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: sans-serif;
+  }
+  
+  /* Component styles */
+  .product-detail {
+    /* Add styles here */
+  }
+  
+  .product-image {
+    /* Add styles here */
+  }
+  
+  .product-info {
+    /* Add styles here */
+  }
+  
+  h1 {
+    /* Add styles here */
+  }
+  
+  h2 {
+    /* Add styles here */
+  }

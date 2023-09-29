@@ -10,9 +10,9 @@ function CardComponent({ product, onRemove }) {
         className="mini-product-image"
       />
       <br />
-    
+
       <h3 className="product-title">{product.title}</h3>
-      
+
       <button
         className="remove-button"
         onClick={onRemove}

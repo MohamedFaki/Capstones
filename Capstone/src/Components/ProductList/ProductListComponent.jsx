@@ -13,7 +13,7 @@ function ProductListComponent({ addToCart, cart, removeFromCart }) {
   const [limit, setLimit] = useState(20);
   const [sort, setSort] = useState("asc");
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [showCartSummary, setShowCartSummary] = useState(true); // Initially, show the cart summary
+  const [showCartSummary, setShowCartSummary] = useState(true);
   const [showSearchBar, setShowSearchBar] = useState(false);
   const [showFilterCategory, setShowFilterCategory] = useState(false);
   const [searchInput, setSearchInput] = useState("");
@@ -105,7 +105,7 @@ function ProductListComponent({ addToCart, cart, removeFromCart }) {
             </label>
           </div>
         )}
-        {showSearchBar && (
+        {showSearchBar && ( 
           <label>
             <input
               type="text"
@@ -139,7 +139,7 @@ function ProductListComponent({ addToCart, cart, removeFromCart }) {
           </div>
         ))}
       </div>
-      
+
       <div className="cart-icon-container">
         {showCartSummary && (
           <div className="cart-summary">

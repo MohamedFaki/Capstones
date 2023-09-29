@@ -1,39 +1,58 @@
-div {
-    text-align: center;
-    padding: 20px;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
-  
-  h2 {
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
     font-size: 2em;
-  }
-  
-  /* Form styles */
-  form {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-  }
-  
-  label {
+}
+
+label {
     font-weight: bold;
     font-size: 1.2em;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-  }
-  
-  button[type="submit"],
-  button[type="button"] {
+}
+
+button[type="submit"],
+button[type="button"] {
     background-color: #ff6f61;
     color: #fff;
     padding: 10px 20px;
@@ -42,35 +61,33 @@ div {
     cursor: pointer;
     font-weight: bold;
     margin: 10px 0;
-    transition: background-color 0.3s ease;
     font-size: 1.2em;
-  }
-  
-  button[type="submit"]:hover,
-  button[type="button"]:hover {
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
     background-color: #ff4d3f;
-  }
-  
-  /* Login status */
-  p {
+}
+
+p {
     font-size: 1.2em;
     margin: 10px 0;
     color: #333;
-  }
-  
-  /* Media queries */
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     h2 {
-      font-size: 1.5em;
+        font-size: 1.5em;
     }
-  
+
     input[type="text"],
     input[type="password"] {
-      font-size: 0.9em;
+        font-size: 1em;
     }
-  
+
     button[type="submit"],
     button[type="button"] {
-      font-size: 1em;
+        font-size: 1.2em;
     }
-  }
+}
