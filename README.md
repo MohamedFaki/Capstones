@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+[Link to the Login Page](https://651652116da52f2a7bea43a2--sage-cobbler-7a07df.netlify.app/login)
+
 # E-Commerce Website
 
 This is a feature-rich E-Commerce website built with React that leverages several modern technologies and techniques for a seamless user experience.
