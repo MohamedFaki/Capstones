@@ -1,42 +1,56 @@
-import React from 'react';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'; // Import Routes
-import HomeRoutes from './routes/HomeRoutes';
-import HomeComponent from './Components/Home/HomeComponent';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Link, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
-import ProductsRoutes from './routes/ProductsRoutes';
+import './index.css'
 import ProductListComponent from './Components/ProductList/ProductListComponent';
-import CartRoutes from './routes/CartRoutes';
-import CartComponent from './Components/Cart/CartComponent';
+import ProductDetailComponent from './Components/ProductList/ProductDetailComponent';
+import HeaderComponent from './Components/Header/HeaderComponent';
+import './Components/ProductList/CardComponent.css';
+import AuthenticationComponent from './Components/Authentication/AuthenticationComponent';
+import AuthenticationRoutes from './routes/AuthenticationRoutes';
 
 function App() {
-// link to home and products, cart
-// path to home and products, cart
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
+
+  const removeFromCart = (productId) => {
+    const updatedCart = cart.filter((product) => product.id !== productId);
+    setCart(updatedCart);
+  };
 
   return (
     <Router>
       <div className="App">
-        <nav className ="navbar">
+        <HeaderComponent />
+
+        <nav className="navbar">
           <ul>
-            <li>
-              <Link to="/">Home Page</Link>
-            </li>
-            <li>
-              <Link to="/products">Product Page</Link>
-            </li>
-            <li>
-              <Link to="/cart">Cart Page</Link>
-            </li>
+            
+
           </ul>
         </nav>
         <Routes>
-          <Route exact path="/" element={<HomeComponent />} />
-          <Route exact path="/products" element={<ProductListComponent />} />
-          <Route exact path="/cart" element={<CartComponent />} />
+          <Route
+            path="/"
+            element={<Navigate to="/login" />}
+          />
+          <Route
+            path="/products/:id"
+            element={<ProductDetailComponent addToCart={addToCart} cart={cart} />}
+          />
+          <Route exact path="/login" element={<AuthenticationComponent />} />
+
+          <Route
+            path="/product-list"
+            element={<ProductListComponent addToCart={addToCart} cart={cart} removeFromCart={removeFromCart} />}
+          />
         </Routes>
       </div>
     </Router>
   );
-
 }
 
 export default App;

@@ -1,13 +1,13 @@
 // routes/HomeRoutes.jsx
 import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'; // Import necessary components
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'; 
 import HomeComponent from '../Components/Home/HomeComponent';
 
 
 const HomeRoutes = () =>{
     return (
             <Routes>
-                <Route exact path="/" element={<HomeComponent />} />
+                <Route path="/" element={<HomeComponent />} />
             </Routes>
 
     )
